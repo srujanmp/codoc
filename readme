@@ -1,0 +1,120 @@
+Project Idea:  Real-time Collaborative Document Editor with Version Control
+
+Specifics:
+
+Functionality: Develop a web-based document editor (like Google Docs) that allows multiple users to simultaneously edit a document.
+Real-time Collaboration: Implement real-time updates, so when one user types, all other users see the changes instantly.
+Version Control: Include a system to track changes, allow users to revert to previous versions, and visualize the history of edits.
+Technology Focus:
+Frontend: React or Next.js (to leverage your existing skills ) for a dynamic user interface.   
+Backend: Node.js with WebSockets (again, building on your experience ) for real-time communication.   
+Database: MongoDB (which you're familiar with ) to store document content and version history.   
+Potential Extension: Integrate a simple authentication system (you've used Google AuthO, so you could explore others or build your own ).   
+Complexity: This project is more complex than your previous ones due to the intricacies of real-time collaboration and version control, offering a good challenge.
+This project will allow you to deepen your understanding of:
+
+Real-time web applications
+Advanced data management
+Potentially conflict resolution in collaborative editing
+
+
+
+
+IN DETAIL
+Okay, let's refine the "Real-time Collaborative Document Editor with Version Control" project description, incorporating the specific technologies you want to use and why they're beneficial, with PostgreSQL as the database.
+
+**Project Idea:** Real-time Collaborative Document Editor with Version Control
+
+**Specifics:**
+
+* **Functionality:** Develop a web-based document editor (like Google Docs) that allows multiple users to simultaneously edit a document.
+* **Real-time Collaboration:** Implement real-time updates, so when one user types, all other users see the changes instantly.
+* **Version Control:** Include a system to track changes, allow users to revert to previous versions, and visualize the history of edits.
+
+**Technology Focus:**
+
+* **Frontend & Fullstack:**
+    * **Next.js:** For building the user interface and handling some backend logic.
+        * **Purpose:** Frontend development with server-side rendering for improved SEO and initial load performance. Also, to leverage full-stack capabilities.
+        * **Why it's good:** SEO-friendly, fast, and provides full-stack capabilities (API routes, middleware, etc.), streamlining development.
+* **Styling:**
+    * **Tailwind CSS:** For styling the application.
+        * **Purpose:** To style the user interface components.
+        * **Why it's good:** Utility-first approach enables rapid UI development and customization without extensive CSS writing.
+* **Language:**
+    * **TypeScript:** For writing JavaScript code.
+        * **Purpose:** To enhance JavaScript with static typing.
+        * **Why it's good:** Provides type safety, improves code readability, offers better auto-suggestions, and reduces runtime errors.
+* **Backend & API:**
+    * **Node.js with tRPC:** For backend logic and API.
+        * **Purpose:** To build the server-side logic and handle communication between the client and server. tRPC is used to build the API.
+        * **Why it's good:** tRPC simplifies API creation with end-to-end type safety. It allows building APIs without manually defining types, as types are automatically inferred on both the client and server.
+* **Database:**
+    * **PostgreSQL:** For storing document data, user information, and version history.
+        * **Purpose:** To persist data, including document content and revisions.
+        * **Why it's good:** A robust relational database that ensures data integrity and provides powerful querying capabilities for managing version history. Prisma will be used as an ORM to interact with the database.
+    * **Prisma:** To interact with the PostgreSQL database.
+        * **Purpose:** Database ORM (Object-Relational Mapping).
+        * **Why it's good:** Simplifies database interactions with type safety, provides database migrations, and offers an intuitive query builder.
+
+* **Complexity:** This project is more complex than your previous ones due to the intricacies of real-time collaboration and version control, offering a good challenge.
+
+**This project will allow you to deepen your understanding of:**
+
+* Real-time web applications
+* Advanced data management
+* Potentially conflict resolution in collaborative editing
+* Modern full-stack development with Next.js, tRPC, and Prisma
+* Type-safe development with TypeScript
+
+This revised description emphasizes your chosen technology stack and explains the benefits of each technology in the context of this project.
+
+
+
+
+
+
+
+
+Ok to proceed? (y) y
+
+√ What is your project named? ... frontend
+√ Would you like to use TypeScript? ... Yes
+√ Would you like to use ESLint? ... Yes
+√ Would you like to use Tailwind CSS? ... Yes
+√ Would you like your code inside a `src/` directory? ... Yes
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to use Turbopack for `next dev`? ... Yes
+√ Would you like to customize the import alias (`@/*` by default)? ... No
+
+Creating a new Next.js app in C:\Users\srujan\Desktop\quick project\frontend.
+
+
+*BACKEND:
+
+mkdir backend
+cd backend
+npm init -y
+
+npm install express @trpc/server @trpc/client zod cors
+npm install prisma
+
+
+npm install typescript ts-node-dev @types/express @types/node --save-dev
+npx prisma generate
+
+npx prisma migrate dev --name init
+
+npm install prisma --save-dev
+npx prisma init
+
+
+# Install
+npm install @prisma/client
+npm install prisma
+
+# Generate client
+npx prisma generate
+
+# Apply migration
+npx prisma migrate dev --name init
