@@ -28,12 +28,16 @@
     "@trpc/client": "^11.0.0",
     "@trpc/react-query": "^11.0.0",
     "@trpc/server": "^11.0.0",
+    "@types/ws": "^8.18.1",
     "next": "^15.2.3",
     "next-auth": "5.0.0-beta.25",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "server-only": "^0.0.1",
     "superjson": "^2.2.1",
+    "ws": "^8.18.2",
     "zod": "^3.24.2"
   },
   "devDependencies": {

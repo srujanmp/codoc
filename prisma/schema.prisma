@@ -92,6 +92,9 @@ model Document {
     // Viewers relationship
     viewers User[] @relation("DocumentViewers")
 
+    lastActive DateTime @default(now())
+    activeUsers Json? @default("[]")
+
     @@index([id])
 }
 
